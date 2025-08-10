@@ -1,0 +1,10 @@
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y git imagemagick ffmpeg libwebp-dev
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+source ~/.bashrc
+nvm install 20
+nvm use 20
+git clone https://github.com/<your-username>/SPACE-MD.git
+cd SPACE-MD
+npm install --build-from-source
+npm start
